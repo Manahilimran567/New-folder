@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-size: 35px;
+        }
+
+        #navbar {
+            position: relative;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-bottom: 1px solid black;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            font-size: 20px;
+            color: black;
+            flex-wrap: wrap;
+        }
+
+        li {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        #img1 {
+            height: 40px;
+            width: 40px;
+        }
+
+        button {
+            height: 40px;
+            width: 80px;
+        }
+
+        #button1 {
+            height: 40px;
+            width: 100px;
+            background-color: rgb(253, 50, 50);
+            border-radius: 20px 20px 20px 20px;
+            border-color: rgb(253, 50, 50);
+            color: white;
+        }
+
+        #div1 {
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #head1 {
+            color: rgb(253, 50, 50);
+            font-family: sans-serif;
+        }
+
+        #div2 {
+            background-color: rgb(228, 225, 225);
+            border-radius: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .para {
+            font-family: sans-serif;
+        }
+
+        .myhead {
+            color: rgb(73, 73, 73);
+            font-family: sans-serif;
+        }
+
+        #location {
+            height: 40px;
+            width: 300px;
+            border-radius: 5px 5px 5px 5px;
+            border-color: rgb(253, 50, 50);
+        }
+
+        #check {
+            height: 40px;
+            width: 140px;
+            border-radius: 5px 5px 5px 5px;
+            border-color: rgb(253, 50, 50);
+        }
+
+        #img2 {
+            height: 400px;
+            width: 600px;
+            display: inline-block;
+            vertical-align: middle;
+            justify-content: space-evenly;
+        }
+
+        #button2 {
+            height: 40px;
+            width: 250px;
+            background-color: rgb(253, 50, 50);
+            border-radius: 40px 40px 40px 40px;
+            color: white;
+        }
+
+        #mypara1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 60px;
+        }
+
+        #mypara2 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        #myimg {
+            height: 220px;
+            width: 300px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        #myhead1 {
+            font-family: sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #mybutton {
+            background-color: rgb(253, 50, 50);
+            width: 120px;
+            border-color: rgb(253, 50, 50);
+            border-radius: 40px 40px 40px 40px;
+            color: white;
+        }
+
+        #card1 {
+            height: 370px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 20px 20px 20px 20px;
+            align-items: center;
+            justify-content: space-around; 
+            text-align: center;
+        }
+
+        #cards {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        #mydiv{
+            background-color: rgb(253, 50, 50);
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            border-radius: 20px 20px 20px 20px;
+
+        }
+
+        #myhead2 {
+            font-size: 40px;
+        }
+
+        #mypara3 {
+            font-size: 20px;
+        }
+
+        #card2 {
+            flex-direction: row;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #card3{
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            color: black;
+            border-radius: 20px 20px 20px 20px;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .myimg1 {
+            height: 80px;
+            width: 80px;
+        }
+        #header{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 50px;
+        }
+        #mydiv1{
+           
+            flex-direction: row;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #mydiv2{
+            border: 1px solid black;
+            height: 350px;
+            width: 250px;
+            background-color: white;
+            color: black;
+            border-radius: 20px 20px 20px 20px;
+            align-items: center;
+            justify-content: space-around; 
+            text-align: center;
+            flex-wrap: wrap;
+        }
+        #images{
+           height: 210px;
+           width: 250px;
+           border-radius: 20px 20px 0 0 ;
+        }
+        #header2{
+           font-family: sans-serif;
+           font-size: 20px;
+        }
+        #mybutton2{
+           background-color: rgb(253, 50, 50);
+           border-radius: 40px 40px 40px 40px ;
+           border-color: rgb(253, 50, 50);
+           color: white;
+           width: 120px;
+        }
+        #heading{
+            font-family: sans-serif;
+            font-size: 40px;
+            text-align: center;
+        }
+        #div4{
+            flex-direction: row;
+            justify-content: space-evenly;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #div5{
+           width: 300px;
+           height: 290px;
+           border: 0.1em solid black;
+           border-radius: 20px 20px 20px 20px;
+        }
+        #image1{
+            border-radius: 20px 20px 0 0;
+           height: 170px;
+           width: 300px;
+        }
+        #para1{
+           font-family: sans-serif;
+           text-align: center;
+        }
+        #para2{
+       font-family: sans-serif;
+       font-size: 30px;
+       margin: 0 0 0 75px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav id="navbar">
+
+            <h1>SpotFinder</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Become a Partner</a></li>
+            </ul>
+            <div id="div1">
+                <img id="img1" src="bag icon.jpg" alt="">
+                <button type="button">Login</button>
+                <button id="button1" type="button">Register</button>
+            </div>
+        </nav>
+
+
+    </div>
+    <br>
+    <div id="div2">
+        <div>
+        <h1 class="myhead">Parking</h1>
+        <h1 id="head1">Simplified</h1>
+        <p class="para">Easily Find a Parking Space now!</p>
+        <input type="text" placeholder="Your Location" id="location">
+        <br>
+        <br>
+        <input type="text" placeholder="Select Vehicle Category" id="location">
+        <br>
+        <br>
+        <input type="text" placeholder="Check In" id="check">
+        <input type="text" placeholder="Check Out" id="check">
+        <br>
+        <br>
+        <button id="button2" type="button">Search Parking Spaces</button>
+        </div>
+        <div>
+        <img style="margin-left: 150px; margin-bottom: 50px;" id="img2" src="car parking.jpg" alt="">
+        </div>
+    </div>
+    <p id="mypara1">We are everywhere!</p>
+    <p id="mypara2">Find a new home for your car.</p>
+    <div id="cards">
+        <div id="card1">
+            <img id="myimg" src="carpark.jpg" alt="">
+            <h2 id="myhead1">City Parking</h2>
+            <button id="mybutton" type="button">Find a Parking</button>
+        </div>
+        <div id="card1">
+            <img id="myimg" src="truckparking.jpg" alt="">
+            <h2 id="myhead1">Semi Truck Parking</h2>
+            <button id="mybutton" type="button">Find a Parking</button>
+        </div>
+        <div id="card1">
+            <img id="myimg" src="airport parking.jpg" alt="">
+            <h2 id="myhead1">Airport Parking</h2>
+            <button id="mybutton" type="button">Find a Parking</button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="mydiv">
+        <br>
+        <br>
+        <br>
+        <h1 id="myhead2">
+            Why Spot Finder?
+        </h1>
+        <p id="mypara3">We understand the pain for finding the right spot where your csar feels home. <br>Handicap
+            friendly spots,diligent customer support,we aim to comfort you with <br>nearest parking spot!</p>
+        <div id="card2">
+            <div id="card3">
+                <br>
+                <br>
+                <img class="myimg1" src="clock.png" alt="">
+                <h2 class="head2">It's fast</h2>
+                <p>Our new app makes finding spots in <br>not more than 3 steps.We are building <br>the largest network
+                    of parking spots!</p>
+            </div>
+            <div id="card3">
+                <br>
+                <br>
+                <img class="myimg1" src="smiley.jpg" alt="">
+                <h2 class="head2">It's easy</h2>
+                <p>We aim to keep you hook to our <br>services with an experience excellence <br>team!</p>
+            </div>
+            <div id="card3">
+                <br>
+                <br>
+                <img class="myimg1" src="wallet.jpg" alt="">
+                <h2 class="head2">It's affordable</h2>
+                <p>Find affordable spots and spend your <br>days stress-free while your car is <br>parked with us.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+    </div>
+    <h3 id="header">Airport Parking</h3>
+    <div id="mydiv1">
+        <div id="mydiv2">
+            <img id="images" src="days inn.jpg" alt="">
+            <h2 id="header2">Days Inn by Wyndham</h2>
+            <button id="mybutton2" type="button">Book Now</button>
+        </div>
+        <div id="mydiv2">
+            <img id="images" src="welcome-to-the-days-inn.jpg" alt="">
+            <h2 id="header2">Days Inn by Wyndham</h2>
+            <button id="mybutton2" type="button">Book Now</button>
+        </div>
+        <div id="mydiv2">
+            <img id="images" src="home2.jpg" alt="">
+            <h2 id="header2">Home2 Suites by Hilton</h2>
+            <button id="mybutton2" type="button">Book Now</button>
+        </div>
+        <div id="mydiv2">
+            <img id="images" src="holiday-inn-express-and-suites-houston-4209634077-4x3.jpg" alt="">
+            <h2 id="header2">Holiday Inn Express</h2>
+            <button id="mybutton2" type="button">Book Now</button>
+        </div>
+    </div>
+    <h1 id="heading">Interesting Reads!</h1>
+    <br>
+    <p id="para2">New articles</p>
+    <br>
+    <div id="div4">
+        
+        <div id="div5">
+            <img id="image1" src="1979004.jpg" alt="">
+             <h4 id="para1">Why book your car parking spot online?</h4>
+        </div>
+         <div id="div5">
+            <img id="image1" src="parking_mobile_app.jpg" alt="">
+             <h4 id="para1">How parking apps outshine traditional street parking.</h4>
+        </div>
+         <div id="div5">
+            <img id="image1" src="Firm-handshake-GettyImages-521811101-58db29763df78c5162605f22.jpg" alt="">
+             <h4 id="para1">From manual to digital:the inevitable shift of the parking industry.</h4>
+        </div>
+    </div>
+    
+</body>
+
+</html>
